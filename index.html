@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="max-w-5xl font-geist mx-auto bg-gray-100 px-5" >
+    <!-- Navbar -->
+     <!-- header -->
+    <section>
+        <div class="text-[#002C5C] font-bold text-3xl mt-5 text-center sm:text-left md:text-center lg:text-start">Job Applicaiton Tracker</div> 
+
+        <div class=" sm:flex sm:flex-wrap  md:flex lg:flex lg:justify-start lg:flex-nowrap gap-3  mt-5 mb-5 sm:justify-center ">
+
+            <!-- Dashboard counter -->
+
+        <div class="bg-white rounded-sm px-5 py-5 w-full sm:w-[160px] md:w-[360px]  h-24">
+            <div class="text-l" >Total</div>
+            <div class="text-[#002C5C] text-2xl">8</div>
+        </div>
+        
+        <div class="bg-white rounded-sm px-5 py-5 w-full sm:w-[160px] md:w-[360px] h-24" >
+            <div class="text-l" >Interview</div>
+            <div id="invTotalCount" class="text-green-500 text-2xl ">0</div>
+        </div>
+        
+        <div class="bg-white rounded-sm px-5 py-5 w-full sm:w-[160px] md:w-[360px] h-24" >
+            <div class="text-l" >Rejected</div>
+            <div id="rjTotalCount" class="text-red-500 text-2xl">0</div>
+        </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-300">
+
+    <section>
+
+        <div class=" flex justify-between mt-5 mb-5 ">
+            <div class="font-semibold text-2xl">Available Jobs</div> 
+            <div class="total-jobs font-semibold text-gray-500" > 0 Jobs </div> 
+        </div>
+        <!-- Data -->
+        <div class="flex gap-3 mt-5 mb-5">
+            <div class="All-Tab  bg-white text-gray-500 w-20 h-8 text-center pt-1 " >All</div>
+            <div class="Interview-Tab  bg-white text-gray-500 w-20 h-8 text-center pt-1 " >Interview</div>
+            <div class="Rejected-Tab  bg-white text-gray-500 w-20 h-8 text-center pt-1 ">Rejected</div>
+        </div>
+
+    </section>
+
+</body>
+</html>
